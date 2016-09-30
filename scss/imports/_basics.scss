@@ -1,0 +1,222 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+html, body {
+	color: $black;
+	font-size: 100%;
+	font-family: 'Open+Sans', sans-serif;
+}
+
+header {
+	height: 50%;
+}
+
+
+
+h1 {
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 1.20;
+	opacity: 1.00;
+	letter-spacing: -0.72px;
+	word-spacing: 0.00px;
+	text-transform: none;
+
+}
+
+
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.20;
+	opacity: 1.00;
+	letter-spacing: -0.72px;
+	word-spacing: 0.00px;
+	text-transform: none;
+
+}
+
+
+h3 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.20;
+	opacity: 1.00;
+	letter-spacing: 0.00px;
+	word-spacing: 0.00px;
+	text-transform: none;
+
+}
+
+
+
+p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.60;
+	opacity: 0.70;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	letter-spacing: -0.30px;
+	word-spacing: -0.10px;
+	text-transform: none;
+
+}
+
+
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper {
+	max-width: 60em;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 4% 0 4%;
+	max-height: 100%;
+
+}
+
+
+.info {
+
+	color: $black;
+	display: inline-block;
+	width: 100%;
+	background-color: $lightgray;
+	padding: 1em;
+
+
+
+	@media (min-width: 60.25em) {
+
+		/*position: absolute;*/
+		top: 10em;
+		left: 0;
+		width: 10em;
+	}
+}
+
+.info a {
+
+	color: $red;
+}
+
+.top-section {
+	margin-bottom: 2em;
+	background: white;
+	padding: 2em;
+}
+
+.middle-section {
+	background: white;
+	padding: 2em;
+	display: block;
+	overflow: hidden;
+
+}
+
+
+.article {
+	display: inline-block;
+	width: 100%;
+	float: right;
+	margin-left: 1em;
+	margin-top: 2em;
+
+	
+
+	@media (min-width: 60.25em) {
+
+		width: 35em;
+		margin-top: 0;
+
+	}
+}
+
+
+
+
+
+
+blockquote {
+	
+	width: 100%;
+	padding: 1em;
+	font-size: 1.5em;
+	
+}
+
+@media (min-width: 46.25em) {
+	blockquote {
+		width: 40%;
+		float: right;
+	}
+}
+
+
+nav {
+
+	margin-bottom: 1em;
+
+	ul {
+		list-style: none;
+
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 1em;
+	}
+
+
+	a {
+
+		color: $red;
+		text-decoration: none;
+		padding: .5em;
+		display: block;
+		background: $lightgray;
+	}
+
+	a:hover {
+		color: $white;
+		background-color: $red;
+	}
+
+}
+
+	p {
+		margin: 1em 0;
+	}
+
+	ul {
+
+		list-style: none;
+	}
+
+	img {
+		float: right;
+
+	}
+
+
+
+.p-cuisines .t-cuisines { 
+    color: #fff; 
+    background:$red; 
+} 
+
