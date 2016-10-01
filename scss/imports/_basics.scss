@@ -15,6 +15,7 @@ html, body {
 
 header {
 	height: 50%;
+	display: inline-block;
 }
 
 
@@ -73,21 +74,22 @@ p {
 
 
 #bg {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
 	
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
 }
 
 .wrapper {
 	max-width: 60em;
 	margin: 0 auto;
 	position: relative;
-	padding: 0 4% 0 4%;
+	padding: 0;
 	max-height: 100%;
+	background: #fff;
 
 }
 
@@ -102,7 +104,7 @@ p {
 
 
 
-	@media (min-width: 60.25em) {
+	@media (min-width: 50.25em) {
 
 		/*position: absolute;*/
 		top: 10em;
@@ -117,16 +119,18 @@ p {
 }
 
 .top-section {
-	margin-bottom: 2em;
-	background: white;
+	margin: 0 0 2em 0;
+	background: $lightgray;
 	padding: 2em;
+	width: 100%;
+	max-width: 960px;
 }
 
 .middle-section {
 	background: white;
-	padding: 2em;
 	display: block;
 	overflow: hidden;
+	padding: 0 6em;
 
 }
 
@@ -172,16 +176,22 @@ blockquote {
 nav {
 
 	margin-bottom: 1em;
-	display: inline-flex;
+	background: $lightgray;
+	display: inline-block;
+	float: right;
+	
 
 	ul {
 		list-style: none;
+		display: flex;
+		margin: 0px;
+		padding: 0px;
 
 	}
 
 	li {
 		display: inline-block;
-		margin-right: 1em;
+		margin: 0;
 	}
 
 
@@ -190,8 +200,8 @@ nav {
 		color: $red;
 		text-decoration: none;
 		padding: .5em;
+		/*text-align: center;*/
 		display: block;
-		background: $lightgray;
 	}
 
 	a:hover {
@@ -201,24 +211,24 @@ nav {
 
 }
 
-	p {
-		margin: 1em 0;
-	}
+p {
+	margin: 1em 0;
+}
 
-	ul {
+ul {
 
-		list-style: none;
-	}
+	list-style: none;
+}
 
-	img {
-		float: right;
+img {
+	float: right;
 
-	}
+}
 
 
 
 .p-cuisines .t-cuisines { 
-    color: #fff; 
-    background:$red; 
+	color: #fff; 
+	background:$red; 
 } 
 
