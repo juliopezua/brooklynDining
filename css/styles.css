@@ -114,7 +114,8 @@ blockquote {
     width: 40%;
     float: right; } }
 nav {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  display: inline-flex; }
   nav ul {
     list-style: none; }
   nav li {
