@@ -74,7 +74,7 @@ p {
   width: 100%;
   background-color: #ebebeb;
   padding: 1em; }
-  @media (min-width: 50.25em) {
+  @media (min-width: 60.25em) {
     .info {
       /*position: absolute;*/
       top: 10em;
@@ -101,7 +101,6 @@ p {
   display: inline-block;
   width: 100%;
   float: right;
-  margin-left: 1em;
   margin-top: 2em; }
   @media (min-width: 60.25em) {
     .article {
@@ -120,22 +119,18 @@ blockquote {
 nav {
   margin-bottom: 1em;
   background: #ebebeb;
-  display: inline-block;
   float: right; }
   nav ul {
     list-style: none;
-    display: flex;
     margin: 0px;
     padding: 0px; }
   nav li {
-    display: inline-block;
     margin: 0; }
   nav a {
     color: #d35a5a;
     text-decoration: none;
     padding: .5em;
-    /*text-align: center;*/
-    display: block; }
+    text-align: center; }
   nav a:hover {
     color: #fff;
     background-color: #d35a5a; }
@@ -152,5 +147,12 @@ img {
 .p-cuisines .t-cuisines {
   color: #fff;
   background: #d35a5a; }
+
+@media screen and (min-width: 800px) {
+  nav ul {
+    display: flex; }
+
+  nav li {
+    flex: 1 1 0; } }
 
 /*# sourceMappingURL=styles.css.map */
