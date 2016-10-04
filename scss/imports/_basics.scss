@@ -11,11 +11,19 @@ html, body {
 	color: $black;
 	font-size: 100%;
 	font-family: 'Open+Sans', sans-serif;
+	background-color: #fff;
+background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzE2JyB2aWV3Qm94PScwIDAgNSAxMCc+Cgk8cmVjdCB3aWR0aD0nMTEwJScgeD0nLTUlJyB5PSctNSUnIGhlaWdodD0nMTEwJScgZmlsbD0nI2ZmZicvPgoJPGxpbmUgeDE9Jy0yJyB5MT0nMScgeDI9JzcnIHkyPScxMCcgc3Ryb2tlPScjZWVlJyBzdHJva2Utd2lkdGg9JzInLz4KCTxsaW5lIHgxPSctMicgeTE9JzYnIHgyPSc3JyB5Mj0nMTUnIHN0cm9rZT0nI2VlZScgc3Ryb2tlLXdpZHRoPScyJy8+Cgk8bGluZSB4MT0nLTInIHkxPSctNCcgeDI9JzcnIHkyPSc1JyBzdHJva2U9JyNlZWUnIHN0cm9rZS13aWR0aD0nMicvPgoJPGxpbmUgeDE9JzcnIHkxPScxJyB4Mj0nLTInIHkyPScxMCcgc3Ryb2tlPScjZjVmNWY1JyBzdHJva2Utd2lkdGg9JzInLz4KCTxsaW5lIHgxPSc3JyB5MT0nNicgeDI9Jy0yJyB5Mj0nMTUnIHN0cm9rZT0nI2Y1ZjVmNScgc3Ryb2tlLXdpZHRoPScyJy8+Cgk8bGluZSB4MT0nNycgeTE9Jy00JyB4Mj0nLTInIHkyPSc1JyBzdHJva2U9JyNmNWY1ZjUnIHN0cm9rZS13aWR0aD0nMicvPgo8L3N2Zz4=);
+
+
+
 }
 
 header {
 	height: 50%;
-	display: inline-block;
+	flex: auto;
+	padding: 0px 20px 0px 0px;
+	color: #fff;
+
 }
 
 
@@ -71,6 +79,12 @@ p {
 
 }
 
+.icon-food {
+  
+  font-size: 1.2em;
+}
+
+
 
 
 #bg {
@@ -120,10 +134,12 @@ p {
 
 .top-section {
 	margin: 0 0 2em 0;
-	background: $lightgray;
+	background: $red;
 	padding: 2em;
 	width: 100%;
 	max-width: 960px;
+	z-index: 0;
+	display: flex;
 }
 
 .middle-section {
@@ -131,6 +147,7 @@ p {
 	display: block;
 	overflow: hidden;
 	padding: 0 6em;
+		z-index: 0;
 
 }
 
@@ -175,8 +192,7 @@ blockquote {
 nav {
 
 	margin-bottom: 1em;
-	background: $lightgray;
-	float: right;
+
 	
 
 	ul {
@@ -193,16 +209,23 @@ nav {
 
 	a {
 
-		color: $red;
+		color: #fff;
 		text-decoration: none;
 		padding: .5em;
 		text-align: center;
+		display: block;
 	}
 
 	a:hover {
-		color: $white;
-		background-color: $red;
+		color: $red;
+		background-color: $lightgray;
 	}
+
+	.active {
+		color: $red;
+		background-color: $lightgray;
+	}
+
 
 }
 
@@ -222,10 +245,6 @@ img {
 
 
 
-.p-cuisines .t-cuisines { 
-	color: #fff; 
-	background:$red; 
-} 
 
 @media screen and (min-width: 800px) {
 		
@@ -234,10 +253,6 @@ img {
 
 	}
 
-		nav li {
-			flex: 1 1 0;
-
-		}
 
 
 }
