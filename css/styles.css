@@ -17,6 +17,15 @@ header {
   flex: auto;
   padding: 0px 20px 0px 0px;
   color: #fff; }
+  header h1 {
+    font-weight: 300;
+    font-size: 2.9em;
+    display: inline-block; }
+  header h2 {
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .2px;
+    margin: -4px 0 0; }
 
 h1 {
   font-size: 28px;
@@ -55,17 +64,6 @@ p {
   letter-spacing: -0.30px;
   word-spacing: -0.10px;
   text-transform: none; }
-
-.icon-food {
-  font-size: 1.2em; }
-
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%; }
 
 .wrapper {
   max-width: 60em;
